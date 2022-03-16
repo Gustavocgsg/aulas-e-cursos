@@ -1,2 +1,3 @@
-# aulas-e-cursos
-Lista de já realizei até o momento
+# Cursos completo (Aulas em Vídeo)
+Área destinada a cursos On-line.
+Aluno: Gustavo Guimarães
