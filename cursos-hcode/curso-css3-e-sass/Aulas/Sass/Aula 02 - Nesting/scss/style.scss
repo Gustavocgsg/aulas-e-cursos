@@ -1,0 +1,112 @@
+/* Construção em Flexbox */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(146, 145, 145);
+}
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:chocolate;
+}
+#chat {
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    li {
+        display: flex;
+        margin-bottom: 32px;
+
+        .avatar {
+            padding: 0 16px;
+            display: flex;
+            align-items: end;
+            img {
+                border-radius: 50%;
+                width: 48px;
+            }
+        }
+
+        .message {
+            flex: 1;
+            background-color: #f5f6fa;
+            padding: 16px;
+            border-radius: 8px;
+            border-bottom-left-radius: 0;
+            strong {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color:chocolate;
+            }
+            
+            p {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                color:rgb(146, 145, 145);
+            }
+    
+            span {
+                font-size: 12px;
+                letter-spacing: 1px;
+                color: #525252;
+                opacity: .65;
+            }
+        }
+        .menu {
+            display: flex;
+            align-items: center;
+
+            button {
+                border: none;
+                background: none;
+                outline: none;
+                img {
+                    width: 16px;
+                    opacity: .5;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+// outras possibilidades
+
+// #chat {
+//     display: flex;
+//     flex-direction:column;
+//     margin: 20px;
+//     padding: 0;
+//     list-style: none;
+//      > li {
+//         display: flex;
+//         margin-bottom: 32px;
+//     }
+//     img {
+//         border: none;
+//     }
+//     button {
+//         border: none;
+//     }
+// }
+
+// #chat > {
+//     display: flex;
+//     flex-direction:column;
+//     margin: 20px;
+//     padding: 0;
+//     list-style: none;
+//     li {
+//         display: flex;
+//         margin-bottom: 32px;
+//     }
+//     img {
+//         border: none;
+//     }
+//     button {
+//         border: none;
+//     }
+// }

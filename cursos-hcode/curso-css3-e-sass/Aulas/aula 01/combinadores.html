@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        /* descendentes de...*/
+        form input {
+            border: red 2px solid;
+        }
+        /* filho direto */
+        form > input {
+            border: rgb(3, 101, 180) 2px solid;
+        }
+        /* irmão adjacente direto de...*/
+        form + input {
+            border: rgb(3, 180, 33) 2px solid;
+        }
+        /* irmão adjacente geral de...*/
+        form ~ input {
+        border: rgb(180, 3, 92) 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="endereço">
+    <form action="">
+        <input type="text" placeholder="Nome">
+        <label for="email">
+            <input type="text" placeholder="email">
+        </label>
+        <input type="text" placeholder="senha">
+    </form>
+</body>
+</html>

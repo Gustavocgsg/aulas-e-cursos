@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - box-sizing </title>
+        <style>
+           * {
+              box-sizing: border-box;
+           }
+           /* short reand */
+           /* propriedades: content-box | border-box | unset | initial | inherit */
+           /* padrão: content-box */
+           /* herdado: não */
+
+           body {
+              box-sizing: border-box;
+              /* box-sizing: content-box; */
+           }
+           .content-box {
+              box-sizing: content-box;
+              height: 300px;
+              width: 300px;
+              padding: 100px;
+              background-color: crimson;
+              margin: 5px;
+           }
+           .border-box {
+            box-sizing: border-box;
+              height: 300px;
+              width: 300px;
+              padding: 100px;
+              background-color: crimson;
+              margin: 5px;
+           }
+        </style>
+   </head>
+   <body>
+      <div class="content-box"> 1 - hcode.com.br</div>
+      <div class="border-box">2 - hcode.com.br</div>
+   </body>
+</html>
+</html>

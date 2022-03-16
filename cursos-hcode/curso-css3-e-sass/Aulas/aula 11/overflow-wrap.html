@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - overflow</title>
+        <style>
+
+           /* short reand */
+           /* propriedades: normal | break-word | anywhere | unset | initial | inherit */
+           /* padrão: normal */
+           /* herdado: sim */
+
+           .container {
+              width: min-content;
+              border: rgb(255, 115, 0) 5px solid;
+              /* overflow-wrap: normal; */
+              overflow-wrap: break-word;
+              /* overflow-wrap: anywhere; valor relativamente novo, reduz ao minimo viavel */
+              max-width: 150px;
+              
+           }
+           span {
+              color: crimson;
+           }
+
+        </style>
+   </head>
+   <body>
+      <div class="container">
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit reiciendis non dolores error sit obcaecati, dicta esse tempora possimus veniam nemo inventore omnis facilis blanditiis numquam <span>accusantiumaccusantium</span>  iusto impedit corrupti!
+      </div>
+   </body>
+</html>
+</html>

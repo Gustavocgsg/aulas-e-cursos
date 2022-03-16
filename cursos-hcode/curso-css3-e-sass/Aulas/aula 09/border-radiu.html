@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - border-radius</title>
+        <style>
+           * {
+              box-sizing: border-box;
+           }
+           /* propriedades: lenght[lenght]| initial | inherit */
+           /* padrão: 0 */
+           /* herdado: não */
+
+           /*
+           border-top-left-redius
+           border-top-right-redius
+           border-bottom-right-redius
+           border-bottom-left-redius
+           */
+
+           body { 
+              margin: 0;
+              padding: 0;
+           }
+           .container {
+               width: 500px;
+               height: 500px;
+               background-color: crimson;
+               border-color: sandybrown;
+               border-style: dashed;
+               border-width: 20px;
+               /* border-radius: 50%; */
+               /* border-radius: 20% 10px; */
+               /* border-radius: 20% 10px 5vw; */
+               border-radius: 20% 10px 5vw 100px;
+           }
+        </style>
+   </head>
+   <body>
+      <div class="container">
+      </div>
+   </body>
+</html>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - display</title>
+        <style>
+
+           /* Faz poarte do grupo do flexbox e substitui o uso de border para definir linhas extra div */
+           /* propriedades: value | initial | inherit */
+           /* padrão: vai depender do elemento */
+           /* herdado: não */
+           /* especifico para utilizar no firefox, herança de código legado que está em desuso */
+
+         /* 
+         
+         Lista de valores possiveis 
+         
+         inline | block | inline-block | contents | flex | inline-flex | grid | inline-grid | list-item | run-in | none | table | inline-table | table-caption | table-column-group | table-header-group | table-footer-group | table-cell | table-column | table-row | initial | inherit
+         
+         */
+         body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: black;
+         }
+         h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: chocolate;
+         }
+         .container {
+            margin-top: 30px;
+            max-width: 50vw;
+            color: aliceblue;
+         }
+         .block {
+            display: block; /* sempre ira quebrar uma lina */
+         }
+         .inline {
+            display: inline; /* mantem todos em uma mesma linha, e não permite mexer nas dimenssões do elemento */
+            width: 60px;
+         }
+         .inline-block {
+            display: inline-block;
+            width: 100px;
+         }
+         .contents {
+            display: contents;
+            background-color: aquamarine; /* ele não aceita essa propriedade */
+         }
+         .flex {
+            display: flex;
+            flex-direction: column;
+         }
+         .inline-flex {
+            display: inline-flex;
+         }
+         .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 70px);
+         }
+         .inline-grid {
+            display: inline-grid;
+            grid-template-columns: repeat(4, 70px);
+         }
+         .list-item {
+            display: list-item;
+         }
+
+         /* Construindo uma tabela sem usar a tag table */
+
+         .tabela {
+            display: table;
+            color: #fff;
+         }
+         .linha {
+            display: table-row;
+            color: #fff;
+         }
+         .celula {
+            display: table-cell;
+            color: #fff;
+         }
+         .cabecalho {
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+         }
+         .none {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(8, 36, 36);
+            display: none;
+         }
+        </style>
+   </head>
+   <body>
+      <div class="container">
+         <h2>Display: block</h2>
+
+         <div class="block">block</div>
+         <div class="block">block</div>
+         <div class="block">block</div>
+         <div class="block">block</div>
+
+         <h2>Display: inline</h2>
+
+         <div class="inline">inline</div>
+         <div class="inline">inline</div>
+         <div class="inline">inline</div>
+         <div class="inline">inline</div>
+
+         <h2>Display: inline-block</h2>
+
+         <div class="inline-block">inline-block</div>
+         <div class="inline-block">inline-block</div>
+         <div class="inline-block">inline-block</div>
+         <div class="inline-block">inline-block</div>
+
+         <h2>Display: contents</h2>
+
+         <div class="contents">contents</div>
+         <div class="contents">contents</div>
+         <div class="contents">contents</div>
+         <div class="contents">contents</div>
+
+         <h2>Display: flex</h2>
+
+         <div class="flex">flex</div>
+         <div class="flex">flex</div>
+         <div class="flex">flex</div>
+         <div class="flex">flex</div>
+
+         <div class="flex">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+         </div>
+         
+         <h2>Display: inline-flex</h2>
+
+         <div class="inline-flex">
+            <div>inline-flex</div>
+            <div>inline-flex</div>
+            <div>inline-flex</div>
+            <div>inline-flex</div>
+         </div>
+
+         <div class="inline-flex">
+            <div>A - inline-flex</div>
+            <div>B - inline-flex</div>
+            <div>C - inline-flex</div>
+            <div>D - inline-flex</div>
+         </div>
+
+         <h2>Display: grid</h2>
+
+         <div class="grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>5</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+         </div>
+         <br>
+         <div class="grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>5</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+         </div>
+
+         <h2>Display: grid</h2>
+
+         <div class="inline-grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>5</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+         </div>
+
+         <div class="inline-grid">
+            <div>AC</div>
+            <div>CE</div>
+            <div>%</div>
+            <div>/</div>
+            <div>7</div>
+            <div>5</div>
+            <div>9</div>
+            <div>x</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>+</div>
+            <div>0</div>
+            <div>.</div>
+            <div>,</div>
+            <div>=</div>
+         </div>
+
+         <h2>Display: list-item</h2>
+
+         <ul>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+         </ul>
+
+         <ol>
+            <li>Item 01</li>
+            <li>Item 02</li>
+            <li>Item 03</li>
+         </ol>
+
+         <h2>Display: table</h2>
+
+         <table>
+            <thead>
+               <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Idade</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>Flaviado</td>
+                  <td>flavianomesquita@gmail.com</td>
+                  <td>99</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr>
+                  <td>(1) Nome</td>
+                  <td>(1) E-mail</td>
+                  <td>99</td>
+               </tr>
+            </tfoot>
+         </table>
+
+         <!-- Não está semântica mais ela se apresenta como uma lista devido a chamada da class list-item -->
+         
+         <!-- Construindo uma tabela sem usar a tag <table> -->
+
+         <h2>Display: Tabela não semântica (sem utilizar a contstução semântica recomendada)</h2>
+         
+         <div class="tabela">
+            <div class="cabecalho">
+               <div class="linha">
+                  <div class="celula">Nome</div>
+                  <div class="celula">E-mail</div>
+                  <div class="celula">Idade</div>
+               </div>
+            </div>
+               <div class="linha">
+                  <div class="celula">Flaviano</div>
+                  <div class="celula">flavianomesquita@gmail.com</div>
+                  <div class="celula">99</div>
+               </div>
+         </div>
+
+         <h2>Display: none</h2>
+
+         <div class="none">box Gustavo</div>
+         
+      </div>
+   </body>
+</html>

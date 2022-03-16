@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - border-spacing </title>
+        <style>
+           * {
+              box-sizing: border-box;
+           }
+           /* short reand */
+           /* propriedades: lenght | unset | initial | inherit */
+           /* padrão: 2px */
+           /* herdado: sim */
+
+           body {
+              display: flex;
+              justify-content: center;
+              /* align-items: center; */
+              /* height: 100vh; */
+              color: #333e;
+              padding: 20px;
+
+              margin: 0;
+              padding: 0;
+           }
+           table {
+              border: solid 1px crimson;
+              width: 70vw;
+              border-collapse: separate;
+              border-spacing: 4px;
+
+           }
+           td, th {
+              border: solid 1px crimson;
+           }
+        </style>
+   </head>
+   <body>
+      <table>
+         <thead>
+            <tr>
+               <th>Nome</th>
+               <th>E-mail</th>
+               <th>Telefone</th>
+               <th>Cargo</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+               <td>Anthony Rafale</td>
+               <td>suporte@hcode.com.br</td>
+               <td>81-992185304</td>
+               <td>Sênior Developer</td>
+            </tr>
+            <tr>
+               <td>Ronaldo Braz</td>
+               <td>ecommerce@hcode.com.br</td>
+               <td>81-992185304</td>
+               <td>Departamento de Edição</td>
+            </tr>
+            <tr>
+               <td>Jeisa Lima</td>
+               <td>vendas@hcode.com.br</td>
+               <td>81-992185304</td>
+               <td>Hcode Lab</td>
+            </tr>
+         </tbody>
+      </table>
+   </body>
+</html>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - resize</title>
+        <style>
+
+           /* short reand */
+           /* propriedades: none | both | horizontal | vertical | block |  unset | initial | inherit */
+           /* padrão: none */
+           /* herdado: não */
+           /* especifico para utilizar no firefox, herança de código legado que está em desuso */
+
+            body {
+               margin: 0;
+               padding: 0;
+               display: flex;
+               flex-direction: column;
+               align-items:center;
+            }
+           .content {
+              width: 50vw;
+           }
+           .item {
+              resize: both;
+              overflow: auto;
+           }
+           textarea {
+              resize: none;
+              /* resize: horizontal; */
+              /* resize:vertical; */
+           }
+        </style>
+   </head>
+   <body>
+      <div class="content">
+         <p class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos minus magnam sapiente, dolorem quod praesentium adipisci enim voluptate natus libero eos pariatur aperiam! Porro labore, consequatur illum ut quis ess.
+         </p>
+         <p class="item">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos minus magnam sapiente, dolorem quod praesentium adipisci enim voluptate natus libero eos pariatur aperiam! Porro labore, consequatur illum ut quis ess.
+         </p>
+         <form action="">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+         </form>
+      </div>
+   </body>
+</html>
+</html>

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Variaveis SASS */
+/* Textos */
+/* utilizando-se de elementos já definidos para gerar um novo elemento com transparência */
+/* variaveis CSS declaratovas */
+:root {
+  --laranja-css: #ff760c;
+  --vermelho-css:#ff0c0c;
+  --azul-css: #0065e9;
+}
+
+/* Construção em Flexbox */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #181818;
+}
+body header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065e9;
+  height: 100px;
+}
+body header h1 {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: crimson;
+}
+body header h2 {
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ff760c;
+}
+body section {
+  background-color: rgba(255, 118, 12, 0.3);
+  height: calc(100vh - 100px);
+}
+
+/*# sourceMappingURL=style.css.map */

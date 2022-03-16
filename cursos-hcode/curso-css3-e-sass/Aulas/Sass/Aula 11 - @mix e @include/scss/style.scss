@@ -1,0 +1,20 @@
+@use "header";
+@use "nav";
+@use "list";
+
+header {
+    @include header.header-style;
+    nav {
+        @include nav.nav-style;
+        ul {
+            display: inline-flex;
+            
+            @include list.list-style;
+            li {
+                font-weight: bold;
+                font-size: 30px;
+                padding: 20px;
+            }
+        }
+    }
+}

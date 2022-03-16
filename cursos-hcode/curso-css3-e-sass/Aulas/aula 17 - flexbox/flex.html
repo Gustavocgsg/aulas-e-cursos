@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - flex</title>
+        <style>
+           /* Flexbox */
+            /* short rend */
+
+            /* 
+            flex-grow
+            flex-shrink
+            flex-basis
+            */
+          
+
+           /* propriedades: flex-grow | flex-shrink | flex-basis | auto | initial | inherit | unset */
+           /* padrão: 0 1 auto */
+           /* herdado: não */
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(27, 25, 25);
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            /* justify-content: center; */
+         }
+         h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: chocolate;
+         }
+         .container {
+            align-items: center;
+            display: flex;
+            height: 50vh;
+            justify-content: center;
+            width: 10%;
+            box-shadow: 0px 0px 0px 5px  rgb(221, 152, .3);
+            /* flex-wrap: wrap; */
+            margin: 20% auto;
+         }
+         .container > div {
+            align-items: center;
+            border: solid .5px;
+            font-weight: bold;
+            height: 150px;
+            width: 200px;
+            background-color: crimson;
+            justify-content: center;
+            margin: 5px;
+            transition: all .2s ease-in-out;
+
+            /* 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            */
+
+            flex: 1 1 100px;
+         }
+         .container > div:hover {
+            border-color: orange;
+         }
+         .container > div.a {
+            flex-shrink: 5;
+         }
+        </style>
+   </head>
+   <body>
+      <h2>flex</h2>
+      <div class="container">
+         <div class="a">A</div>
+         <div class="b">B</div>
+         <div class="c">C</div>
+         <div class="D">D</div>
+      </div>
+   </body>
+</html>

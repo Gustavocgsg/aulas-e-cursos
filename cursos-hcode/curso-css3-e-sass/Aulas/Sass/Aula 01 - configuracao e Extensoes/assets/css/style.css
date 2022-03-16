@@ -1,0 +1,12 @@
+h2 {
+  color: chocolate;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  align-items: center;
+  background-color: #1b1919;
+  height: 98vh;
+  justify-content: center;
+}
