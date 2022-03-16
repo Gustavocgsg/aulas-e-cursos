@@ -1,1 +1,0 @@
-@charset "UTF-8";body,body header{background-color:#181818}*{box-sizing:border-box}body{margin:0;font-family:sans-serif}body header{display:flex;justify-content:center;align-items:center;height:100px}body header h1{margin:0;font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;color:#d2691e}body section{background-color:rgba(210,105,30,.3);height:calc(100vh - 100px)}
