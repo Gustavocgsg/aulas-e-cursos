@@ -1,0 +1,9 @@
+$sizes: ("xs":50px, "sm":100px, "md": 200px); //mapeia os itens declarados
+
+@each $key, $value in $sizes {
+    .#{$key} {//pega cada uma das declarações e transforma em classe.
+        width: $value;// define e atribui valor dinamicamente
+        height: $value;
+        border-radius: 50%;
+    }
+}

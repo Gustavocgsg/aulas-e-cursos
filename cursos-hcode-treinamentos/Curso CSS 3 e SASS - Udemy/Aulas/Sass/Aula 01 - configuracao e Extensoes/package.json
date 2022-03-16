@@ -1,0 +1,14 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "notes": "/* Aqui você define o caminho assistido das pastas scss e css dentro do diretório assets - no terminal execulte o comando npm run sass */",
+    "sass":"sass assets/scss:assets/css --watch", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

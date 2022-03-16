@@ -1,0 +1,6 @@
+@use "sass:color";//declarativa padrão da biblioteca sass para definição de cores
+
+@function invert($color, $amount: 100%){//não sendo preciso usar a intensidade é so declarar a cor...
+    $inverse: color.change($color, $hue: color.hue($color)+ 180);// cuidado ao escrever a chamada
+    @return color.mix($inverse, $color, $amount);//retorna o resultado acima e serve para declarar a intensidade utilizando o $amount
+}

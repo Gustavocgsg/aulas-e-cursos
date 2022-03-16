@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - border-image-outset</title>
+        <style>
+           * {
+              box-sizing: border-box;
+           }
+           /* propriedades: number | initial | inherit */
+           /* padrão: 0 */
+           /* herdado: não */
+
+           body {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+
+              margin: 0;
+              padding: 0;
+           }
+           .container {
+              width: 500px;
+              height: 500px;
+              background-color: crimson;
+              border: 1px solid rgb(255, 209, 218);
+              border-image-source: url('imagens/img_exemplo.jpeg');
+              border-image-width: 50px;
+              border-image-slice: 140; 
+              border-image-outset: 50;/* area de espaçamento sob o elemento */
+              border-image-repeat: round;
+           }
+        </style>
+   </head>
+   <body>
+      <div class="container"></div>
+   </body>
+</html>
+</html>

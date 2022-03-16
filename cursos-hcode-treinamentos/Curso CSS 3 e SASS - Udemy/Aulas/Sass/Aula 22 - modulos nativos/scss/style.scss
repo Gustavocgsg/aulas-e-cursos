@@ -1,0 +1,19 @@
+$font: "../fonts/Open_Sans/";
+$cor_01: #123ecf;
+$cor_02: #cf4812;
+@font-face {
+    font-family: "OpenSansRegular";
+    src: url($font + "OpenSans-Regular.ttf");
+    font-weight: 400;
+    color: $cor_01;
+}
+@font-face {
+    font-family: "OpenSansLight";
+    src: url($font + "OpenSans-Light.ttf");
+    color: $cor_02;
+}
+body {
+    font-family: "OpenSansLight";
+    font-size: 60px;
+    color: $cor_02;
+}

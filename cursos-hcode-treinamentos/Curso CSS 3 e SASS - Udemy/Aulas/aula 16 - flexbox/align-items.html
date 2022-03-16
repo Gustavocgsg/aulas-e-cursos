@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de CSS Hcode - align-items</title>
+        <style>
+           /* Flexbox */
+
+           /* propriedades: normal | stretch | start | center | end | flex-start | flex-end | self-start | self-end | baseline | fist baseline | last baseline | safe center | unsafe center | space-between | space-around | space-evenly | initial | inherit | unset */
+           /* padrão: normal */
+           /* herdado: não */
+         body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(144, 15, 15);
+         }
+         h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: chocolate;
+         }
+         .container-flex {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            align-items: flex-start;
+
+         }
+         .container {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(151, 179, 25);
+            align-items: start;
+         }
+         .container > div {
+            width: 150px;
+            /* height: 150px; */
+            border-width: 0.5px;
+            border-style: solid;
+            margin: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         /* perfumaria */
+         .container > div:hover {
+            color: blanchedalmond;
+            font-weight: bold;
+         }
+        </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="a">A</div>
+         <div class="b">B</div>
+         <div class="c">C</div>
+         <div class="D">D</div>
+         <div class="E">E</div>
+      </div>
+   </body>
+</html>

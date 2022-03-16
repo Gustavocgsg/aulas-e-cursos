@@ -1,0 +1,32 @@
+/* Variaveis SASS */
+$bg_dark: rgb(24, 24, 24);
+$cor_chocolate:chocolate;
+/* utilizando-se de elementos já definidos para gerar um novo elemento com transparência */
+$cor_chocolate_transparent:rgba($cor_chocolate, 0.3);
+
+/* Construção em Flexbox */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: $bg_dark;
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg_dark;
+        height: 100px;
+        h1 {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:$cor_chocolate;
+        }
+        
+    }
+    section {
+        background-color: $cor_chocolate_transparent;
+        height: calc(100vh - 100px);
+    }
+}
